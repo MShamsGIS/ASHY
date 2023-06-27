@@ -1,0 +1,145 @@
+.blog-posts {
+  padding: 50px 0;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 600px;
+  margin: 30px;
+}
+
+.blog-posts-container {
+  /* max-width: 1000px; */
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.blog-post {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 600px;
+}
+.blog-posts h2 {
+  font-size: 30px;
+  color: #0f6292;
+  align-items: center;
+  text-align: center;
+}
+
+.post-img {
+  width: 600px;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.post-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #73b2d6;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #0f6292;
+  color: #fff;
+}
+
+.swiper-button-prev {
+  left: 30px;
+}
+
+.swiper-button-next {
+  right: 30px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* ------------------- */
+
+.header {
+  background-color: #ffffffe3;
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  align-items: center;
+  padding: 10px 50px;
+}
+.header .logoContent {
+  display: flex;
+  align-items: center;
+}
+.header .logoContent .logo img {
+  height: 4rem;
+}
+.header .logoContent .logoName {
+  color: #0f6292;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.header .navbar a {
+  font-size: 2rem;
+  margin-right: 3rem;
+  color: #0f6292;
+  font-weight: bold;
+}
+.header .navbar a:hover {
+  border-bottom: 0.1rem solid #0f6292;
+  padding-bottom: 0.4rem;
+}
+.header .navbar a.active {
+  border-bottom: 0.1rem solid #0f6292;
+  padding-bottom: 0.4rem;
+}
+
+.header .icon i {
+  font-size: 2rem;
+  margin-right: 2rem;
+  color: #0f6292;
+  cursor: pointer;
+}

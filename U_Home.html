@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASHY</title>
+    <!-- ?swiper link  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- ?cdn icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- ?custom css file  -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./U_home.css" />
+    <link rel="icon" type="image/png" href="./images/ashy_logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  </head>
+  <body>
+    <!-- *header section start here  -->
+    <header class="header">
+      <div class="logoContent">
+        <a href="./index.html" class="logo"
+          ><img src="images/ashy_logo.png" alt=""
+        /></a>
+        <h1 class="logoName">ASHY</h1>
+      </div>
+      <nav class="navbar">
+        <a href="./index.html">home</a>
+        <a href="./servies.html">Our Services</a>
+        <a href="./about_us.html">About us</a>
+        <a href="./ticket.html">ASHY Tickets</a>
+        <a href="./U_login.html"> <i class="fas fa-user-alt"></i></a>
+      </nav>
+    </header>
+    <div class="mother_map">
+      <!-- *----------------------------------------- floating-panel section start here ----------------------------------------- -->
+
+      <div id="floating-panel">
+        <input
+          class="dir_des"
+          type="text"
+          id="direction"
+          placeholder="Enter your location (A)"
+        />
+        <input
+          class="dir_des"
+          type="text"
+          id="destination"
+          placeholder="Enter your destination (B)"
+        />
+        <input
+          type="button"
+          value="Get Directions"
+          class="button button-primary"
+        />
+      </div>
+      <!-- !----------------------------------------- floating-panel section start here ----------------------------------------- -->
+      <div id="map"></div>
+    </div>
+
+    <!--  !----------------------Route Network section ends here  ------------------------>
+    <!-- *-----------------------esri section start here  ------------------------------->
+    <div class="esri_map">
+      <iframe
+        id="esri"
+        src="https://monf.maps.arcgis.com/apps/webappviewer/index.html?id=45144f299ec446439a0ca7e3ca1efd06"
+      ></iframe>
+    </div>
+    <!--  !----------------------esri Network section ends here  ------------------------>
+    <!-- *-----------------------footer section start here  ------------------------------->
+    <footer class="footer" id="contact">
+      <div class="box-container">
+        <div class="mainBox">
+          <div class="content" si>
+            <a href="./index.html"
+              ><img width="100px" src="images/ashy_logo.png" alt=""
+            /></a>
+            <h1 class="logoName">ASHY</h1>
+          </div>
+        </div>
+        <div class="box">
+          <h3>Quick link</h3>
+          <a href="./index.html"> <i class="fas fa-arrow-right"></i>Home</a>
+          <a href="./servies.html">
+            <i class="fas fa-arrow-right"></i>Our Services</a
+          >
+          <a href="./about_us.html">
+            <i class="fas fa-arrow-right"></i>About Us</a
+          >
+          <a href="./ticket.html">
+            <i class="fas fa-arrow-right"></i>Ashy Tickets</a
+          >
+        </div>
+        <div class="box">
+          <h3>Extra link</h3>
+          <a href="./U_signup.html"> <i class="fas fa-user-cog"></i>Register</a>
+          <a href="./U_login.html">
+            <i class="fas fa-user-alt"></i>User Login</a
+          >
+        </div>
+        <div class="box">
+          <h3>Contact Info</h3>
+          <a href="#"> <i class="fas fa-phone"></i>+010039</a>
+          <a href="#"> <i class="fas fa-envelope"></i>ashy@gmail.com</a>
+          <a href="./Contact_us.html">
+            <i class="far fa-paper-plane"></i>Leave a Comment</a
+          >
+        </div>
+      </div>
+      <div class="share">
+        <a
+          href="https://www.facebook.com/profile.php?id=100093564187678&mibextid=ZbWKwL"
+          target="_blank"
+          class="fab fa-facebook-f"
+        ></a>
+        <a href="https://twitter.com/ASHY_service" class="fab fa-twitter"></a>
+        <a
+          href="https://instagram.com/ashy.service?igshid=MzRlODBiNWFlZA=="
+          target="_blank"
+          class="fab fa-instagram"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/ashy-service-3919b527a/"
+          target="_blank"
+          class="fab fa-linkedin"
+        ></a>
+        <a
+          href="https://www.pinterest.com/ashy_service/"
+          target="_blank"
+          class="fab fa-pinterest"
+        ></a>
+      </div>
+      <div class="credit">
+        created by <span><b>ASHY Tec Team </b>|all rights reserved!</span>
+        <span class="elcopyrights"><b>&copy;ASHY</b></span>
+      </div>
+    </footer>
+    <!-- !----------------------footer section end here  ------------------------>
+    <!-- ?swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- ?custom js file  -->
+
+    <!-- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> -->
+    <!-- <script src="https:cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery/min/js"></script> -->
+
+    <script src="U_Home.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>
